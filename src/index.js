@@ -3,7 +3,6 @@ var MyWorker = require("worker!./worker/index.js");
 var registerServiceWorker = require("serviceworker!./serviceWorker/index.js");
 
 
-
 var worker = new MyWorker();
 worker.postMessage({a: 1});
 worker.addEventListener("message", function(event) {

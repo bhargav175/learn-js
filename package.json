@@ -2,7 +2,7 @@
   "name": "learnJs",
   "scripts": {
     "build": "rm -rf lib && babel ./src --out-dir ./lib",
-    "dev": "webpack-dev-server -d --hot --eval --progress --colors",
+    "dev": "webpack-dev-server --profile --devtool source-map -d --hot --eval --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

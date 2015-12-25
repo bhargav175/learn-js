@@ -29,8 +29,11 @@ self.addEventListener('fetch', function(event) {
       .then(function(response) {
         // Cache hit - return response
         if (response) {
-          console.log('response present');
+          console.log(event.request.url+ ' present');
           return response;
+        }
+        else{
+           console.log(event.request.url+' absent');
         }
 
         // IMPORTANT: Clone the request. A request is a stream and
