@@ -6,7 +6,9 @@ import Source from '../src/index';
 */
 class Main extends React.Component{
 	render(){
-		return <div>Main</div>;
+		return <div>Main
+		<Source/>
+		</div>;
 	}
 }
 

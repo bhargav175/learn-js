@@ -18,7 +18,7 @@ module.exports = {
         //at this directory our bundle file will be available
         //make sure port 8090 is used when launching webpack-dev-server
         path: path.join(__dirname, "dist/js/"),
-        publicPath: 'http://localhost:8080/assets/'
+        publicPath: 'http://localhost:8080/'
     },
     module: {
         loaders: [
